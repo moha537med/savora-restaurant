@@ -1,6 +1,4 @@
-/* =========================================================
-   RESET
-========================================================= */
+/* RESET */
 
 * {
     box-sizing: border-box;
@@ -9,9 +7,7 @@
 }
 
 
-/* =========================================================
-   ROOT VARIABLES
-========================================================= */
+/* ROOT VARIABLES */
 :root {
     --primary: #795548;
     --primary-dark: #563C33;
@@ -29,9 +25,7 @@
     --secondary-text: #746A63;
 }
 
-/* =========================================================
-   BODY
-========================================================= */
+/* BODY */
 
 body {
     font-family: "Poppins", sans-serif;
@@ -40,9 +34,7 @@ body {
 }
 
 
-/* =========================================================
-   GENERAL ELEMENTS
-========================================================= */
+/* GENERAL ELEMENTS */
 
 ul {
     list-style-type: none;
@@ -58,9 +50,7 @@ p {
 }
 
 
-/* =========================================================
-   BADGE
-========================================================= */
+/* BADGE */
 
 p.badge {
     width: fit-content;
@@ -76,9 +66,7 @@ p.badge {
 }
 
 
-/* =========================================================
-   BUTTONS / LINKS
-========================================================= */
+/* BUTTONS / LINKS */
 
 button,
 a {
@@ -130,9 +118,7 @@ a.secondary:hover {
 }
 
 
-/* =========================================================
-   HEADER
-========================================================= */
+/* HEADER */
 
 .header {
     background-color: var(--background);
@@ -154,9 +140,7 @@ a.secondary:hover {
 }
 
 
-/* =========================================================
-   LOGO
-========================================================= */
+/* LOGO */
 
 .header .logo {
     width: 120px;
@@ -181,9 +165,7 @@ a.secondary:hover {
 }
 
 
-/* =========================================================
-   NAVBAR
-========================================================= */
+/* NAVBAR */
 
 .header .navbar {
     width: 60%;
@@ -253,9 +235,7 @@ a.secondary:hover {
 }
 
 
-/* =========================================================
-   BOOK TABLE LINK
-========================================================= */
+/* BOOK TABLE LINK */
 
 .header a.bookTable {
     background-color: transparent;
@@ -268,9 +248,7 @@ a.secondary:hover {
 }
 
 
-/* =========================================================
-   MOBILE NAV BUTTON
-========================================================= */
+/* MOBILE NAV BUTTON */
 
 .header .nav-mobile {
     width: 30px;
@@ -303,9 +281,7 @@ a.secondary:hover {
     align-self: center;
 }
 
-/* =========================================================
-   MAIN
-========================================================= */
+/* MAIN */
 
 main {
     /* background-color: var(--white); */
@@ -317,28 +293,20 @@ main {
 }
 
 
-/* =========================================================
-   GENERAL SECTIONS
-========================================================= */
+/* GENERAL SECTIONS */
 
 main section {
     width: 80%;
 
     padding-block: 35px;
 
-    /*
-       Main spacing between sections.
-       Previously: 70px
-    */
     margin: 70px auto;
 
     overflow: hidden;
 }
 
 
-/* =========================================================
-   INTERSECTION OBSERVER ANIMATION
-========================================================= */
+/* INTERSECTION OBSERVER ANIMATION */
 
 main section {
     opacity: 0;
@@ -355,9 +323,7 @@ main section.show {
 }
 
 
-/* =========================================================
-   MODAL
-========================================================= */
+/* MODAL */
 
 main .modal {
     position: fixed;
@@ -408,9 +374,7 @@ main .modal {
 }
 
 
-/* =========================================================
-   MODAL BOOK TABLE
-========================================================= */
+/* MODAL BOOK TABLE */
 
 .modal-content a.bookTable {
     padding: 10px 20px;
@@ -433,9 +397,7 @@ main .modal {
 }
 
 
-/* =========================================================
-   MODAL CLOSE BUTTON
-========================================================= */
+/* MODAL CLOSE BUTTON */
 
 .modal-content #closeModal {
     position: absolute;
@@ -469,9 +431,7 @@ main .modal {
 }
 
 
-/* =========================================================
-   SPECIAL OFFER
-========================================================= */
+/* SPECIAL OFFER */
 
 .special-offer {
     width: 80%;
@@ -548,9 +508,7 @@ main .modal {
 }
 
 
-/* =========================================================
-   WHY US
-========================================================= */
+/* WHY US */
 
 main .why-us {
     width: 80%;
@@ -621,9 +579,7 @@ main .why-us {
 }
 
 
-/* =========================================================
-   CTA
-========================================================= */
+/* CTA */
 
 main .cta-section {
     width: 50%;
@@ -680,9 +636,7 @@ main .cta-section button:hover {
 }
 
 
-/* =========================================================
-   FOOTER
-========================================================= */
+/* FOOTER */
 
 .footer {
     
@@ -762,14 +716,12 @@ main .cta-section button:hover {
 }
 
 
-/* =========================================================
-   SOCIAL LINKS
-========================================================= */
+/* SOCIAL LINKS */
 
 .social-links {
     display: flex;
 
-    /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 
     gap: 10px;
 }
@@ -793,9 +745,7 @@ main .cta-section button:hover {
 }
 
 
-/* =========================================================
-   OPENING HOURS
-========================================================= */
+/* OPENING HOURS */
 
 .opening-hours {
     display: flex;
@@ -824,9 +774,7 @@ main .cta-section button:hover {
 }
 
 
-/* =========================================================
-   FOOTER BOTTOM
-========================================================= */
+/* FOOTER BOTTOM */
 
 .footer-bottom {
     border-top: 1px solid #333;
@@ -843,9 +791,7 @@ main .cta-section button:hover {
 }
 
 
-/* =========================================================
-   MOBILE
-========================================================= */
+/* MOBILE RESPONSIVE */
 
 @media (max-width: 768px) {
 
@@ -858,7 +804,7 @@ main .cta-section button:hover {
     }
 
 
-    /* ================= HEADER ================= */
+    /*  HEADER  */
 
     .header {
         /* margin: 20px; */
@@ -963,32 +909,22 @@ main .cta-section button:hover {
     }
 
 
-    /* ================= MAIN ================= */
+    /*  MAIN  */
 
     main section {
         width: 90%;
-
-        /*
-           Smaller spacing on mobile
-        */
         margin: 35px auto;
-
         padding-block: 25px;
     }
 
 
-    /* ================= HERO ================= */
-
+    /*  HERO  */
     main .hero,
     main .about {
         width: 80%;
-
         display: flex;
-
         flex-direction: column;
-
         align-items: stretch;
-
         gap: 30px;
     }
 
@@ -1017,7 +953,7 @@ main .cta-section button:hover {
 
 
 
-    /* ================= SPECIAL OFFER ================= */
+    /*  SPECIAL OFFER  */
 
     .special-offer {
         width: 90%;
@@ -1039,7 +975,7 @@ main .cta-section button:hover {
     }
 
 
-    /* ================= WHY US ================= */
+    /*  WHY US  */
 
     .why-us .cards {
         grid-template-columns: 1fr;
@@ -1048,7 +984,7 @@ main .cta-section button:hover {
 
 
 
-    /* ================= CTA ================= */
+    /*  CTA  */
 
     main .cta-section {
         width: 90%;
@@ -1067,7 +1003,7 @@ main .cta-section button:hover {
     }
 
 
-    /* ================= FOOTER ================= */
+    /*  FOOTER  */
 
     .footer {
         margin-top: 30px;
@@ -1090,9 +1026,7 @@ main .cta-section button:hover {
 }
 
 
-/* =========================================================
-   TABLET
-========================================================= */
+/* TABLET RESPONSIVE */
 
 @media (min-width: 769px) and (max-width: 1024px) {
 
@@ -1121,7 +1055,7 @@ main .cta-section button:hover {
         
         color: var(--primary-dark);
     }
-    /* ================= NAVBAR ================= */
+    /*  NAVBAR  */
 
     .header .navbar {
         width: auto;
@@ -1133,7 +1067,7 @@ main .cta-section button:hover {
     }
 
 
-    /* ================= LINKS ================= */
+    /*  LINKS  */
 
     .header .navbar .pages-links {
         display: flex;
@@ -1149,7 +1083,7 @@ main .cta-section button:hover {
     }
 
 
-    /* ================= BOOK TABLE ================= */
+    /*  BOOK TABLE  */
 
     .header .navbar a.bookTable {
         padding: 9px 14px;
@@ -1160,14 +1094,14 @@ main .cta-section button:hover {
     }
 
 
-    /* ================= MOBILE ICON ================= */
+    /*  MOBILE ICON  */
 
     .header .nav-mobile {
         display: none;
     }
 
 
-    /* ================= MAIN ================= */
+    /*  MAIN  */
 
     main section {
         width: 85%;
@@ -1181,14 +1115,14 @@ main .cta-section button:hover {
     }
 
 
-    /* ================= WHY US ================= */
+    /*  WHY US  */
 
     .why-us .cards {
         grid-template-columns: repeat(2, 1fr);
     }
 
 
-    /* ================= SPECIAL OFFER ================= */
+    /*  SPECIAL OFFER  */
 
     .special-offer {
         gap: 30px;
@@ -1202,14 +1136,14 @@ main .cta-section button:hover {
     }
 
 
-    /* ================= CTA ================= */
+    /*  CTA  */
 
     main .cta-section {
         width: 70%;
     }
 
 
-    /* ================= FOOTER ================= */
+    /*  FOOTER  */
 
     .footer-container {
         width: 85%;

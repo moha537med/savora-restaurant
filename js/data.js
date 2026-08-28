@@ -212,7 +212,7 @@ export const menuData = [
         price: 4.99,
         rating: 4.7
     },
-    // ================= Burgers =================
+    // === Burgers ===
     {
         id: 7,
         name: "Smoky BBQ Burger",
@@ -224,7 +224,7 @@ export const menuData = [
     },
 
 
-    // ================= Grill =================
+    // === Grill ===
     {
         id: 8,
         name: "Grilled Steak",
@@ -243,7 +243,7 @@ export const menuData = [
         price: 17.99,
         rating: 4.7
     },
-    // ================= Pizza =================
+    // === Pizza ===
     {
         id: 10,
         name: "Truffle Mushroom Pizza",
@@ -254,7 +254,7 @@ export const menuData = [
         rating: 4.9
     },
 
-    // ================= Pasta =================
+    // === Pasta ===
     {
         id: 11,
         name: "Creamy Alfredo Pasta",
@@ -284,7 +284,7 @@ export const menuData = [
     },
 
 
-    // ================= Salads =================
+    // === Salads ===
     {
         id: 14,
         name: "Savora Garden Salad",
@@ -305,7 +305,7 @@ export const menuData = [
     },
 
 
-    // ================= Desserts =================
+    // === Desserts ===
     {
         id: 16,
         name: "Chocolate Lava Cake",
@@ -335,7 +335,7 @@ export const menuData = [
     },
 
 
-    // ================= Drinks =================
+    // === Drinks ===
     {
         id: 19,
         name: "Fresh Orange Juice",
@@ -365,7 +365,7 @@ export let confirmedOrders =
     JSON.parse(localStorage.getItem("confirmedOrders")) || [];
 
 
-// ================= Add Order =================
+// === Add Order ===
 
 export function addOrder(card) {
 
@@ -384,7 +384,7 @@ export function addOrder(card) {
 }
 
 
-// ================= Update Orders Count =================
+// === Update Orders Count ===
 
 export function updateOrdersCount() {
 
@@ -406,7 +406,7 @@ export function updateOrdersCount() {
 }
 
 
-// ================= Confirm Order =================
+// === Confirm Order ===
 
 export function confirmOrder() {
 

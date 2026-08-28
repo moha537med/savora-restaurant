@@ -87,12 +87,13 @@ function showModal(card) {
             <p>Price : <strong>${card.price}$</strong></p>
             <span>Rating : ${card.rating}</span>
         </div>
-        <button class="secondary addOrder">${cardFound ? "Added ✅" : "Add to Order"}</button>
+        <button class="secondary addOrder ${cardFound && "added"}">${cardFound ? "Added ✅" : "Add to Order"}</button>
     `
     modalContent.querySelector(".addOrder").addEventListener("click",()=> {
         addOrder(card);
         updateOrdersCount();
         modalContent.querySelector(".addOrder").textContent = "Added ✅";
+        modalContent.querySelector(".addOrder").classList.add("added")
     })
 
 

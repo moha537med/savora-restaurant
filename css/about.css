@@ -43,7 +43,6 @@ p.badge {
 /* story section */
 .about-story  {
     margin-top: 30px;
-    /* padding-top: 0; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -107,13 +106,11 @@ p.badge {
 
 .about-statistics .statistics span {
     color: var(--primary);
-    /* transition: 1s linear; */
 }
 
 
 
 /* chefs section */
-
 .chefs {
     display: flex;
     flex-direction: column;
@@ -194,7 +191,6 @@ p.badge {
 
     .about-story .content , .about-story .image {
         width: 90%;
-        /* align-items: center; */
     }
     .about-story .content  {
         text-align: justify;

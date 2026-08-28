@@ -220,24 +220,6 @@ function validateMessage(messageInput){
 form.addEventListener("submit" , (e) => {
     e.preventDefault();
 
-    // let isFormValid = true;
-
-    // if all inputs are empty , show error messages for them
-    // inputs.forEach(input => {
-    //     const label = input.parentElement.querySelector("label");
-    //     if(input.value.trim() === ""){
-    //         isFormValid = false;
-            
-    //         showMessage(`Please Fill ${label.textContent}` , "error" , input.parentElement.className);
-    //         input.style.border = "1px solid red";
-    //     }
-    // })
-    
-
-    // if (!isFormValid) {
-    //     return;
-    // }
-
     if(!validateName(fullNameInput)){
         console.log("error");
         return;

@@ -143,6 +143,11 @@ p.badge {
     color: var(--white);
 }
 
+.modal-content button.added {
+    background-color: var(--primary-dark);
+    color: var(--white);
+}
+
 
 /* special offer section */
 .special-offer p.badge {
@@ -201,16 +206,6 @@ p.badge {
     .menu-container .card img {
         height: 220px;
     }
-
-    /* .special-offer {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .special-offer .text,
-    .special-offer .image {
-        width: 100%;
-    } */
 
     .special-offer .image img {
         height: 300px;

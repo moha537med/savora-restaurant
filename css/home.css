@@ -1,9 +1,3 @@
-main .about {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 /* hero and about section */
 .hero {
     margin-block: 0;
@@ -56,6 +50,14 @@ p.badge {
 .hero-content .links a.secondary {
     color: var(--white);
     border-width: 2px;
+}
+
+
+/* about section */
+main .about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -130,6 +132,9 @@ p.badge {
     transition: 0.3s ease;
 }
 
+
+
+
 /* popular menu section */
 main .popular-menu {
     display: flex;
@@ -171,7 +176,6 @@ main .popular-menu {
 .popular-menu .menu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* grid-template-rows: (1fr , 1fr); */
     gap: 20px;
 }
 
@@ -187,9 +191,9 @@ main .popular-menu {
     transition: 0.3s all;
 }
 
-/* .popular-menu .menu .card:hover{
-    transform: scale(1.02);
-} */
+.popular-menu .menu .card:hover{
+    transform: scale(1.01);
+}
 
 .popular-menu .menu .card img {
     width: 100%;
@@ -213,6 +217,12 @@ main .popular-menu {
     padding: 10px 20px;
     border-radius: var(--border-radius);
 }
+
+.popular-menu .menu .card button.added {
+    background-color: var(--primary-dark);
+    color: var(--white);
+}
+
 
 
 
@@ -405,10 +415,7 @@ main .reviews {
 
 
 
-
-/* =========================================================
-   MOBILE
-========================================================= */
+/* Mobile Responsive */
 
 @media (max-width: 768px) {
 
@@ -422,7 +429,7 @@ main .reviews {
 
 
 
-    /* ================= HERO ================= */
+    /*  HERO  */
 
     main .hero .hero-text p {
         text-align: center;
@@ -438,7 +445,7 @@ main .reviews {
     }
 
 
-    /* ================= POPULAR MENU ================= */
+    /* POPULAR MENU */
 
     .popular-menu {
         width: 90%;
@@ -463,21 +470,21 @@ main .reviews {
 
 
 
-    /* ================= WHY US ================= */
+    /*  WHY US  */
 
     .why-us .cards {
         grid-template-columns: 1fr;
     }
 
 
-    /* ================= GALLERY ================= */
+    /*  GALLERY  */
 
     main .gallery .images {
         grid-template-columns: 1fr;
     }
 
 
-    /* ================= REVIEWS ================= */
+    /*  REVIEWS  */
 
     .reviews {
         width: 90%;
@@ -488,8 +495,6 @@ main .reviews {
     }
 
 
-    /* ================= RESERVATION ================= */
-
 
     /* Badge */
 
@@ -499,12 +504,25 @@ main .reviews {
 }
 
 
-/* =========================================================
-   TABLET
-========================================================= */
+/* Tablet Responsive*/
 
 @media (min-width: 769px) and (max-width: 1024px)  {
-    /* ================= POPULAR MENU ================= */
+    /* Gallery */
+    .gallery .images{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /*  REVIEWS  */
+    .reviews {
+        width: 90%;
+    }
+
+    .reviews .reviews-cards {
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        gap: 20px;
+    }
+    /*  POPULAR MENU  */
 
     .popular-menu {
         width: 90%;

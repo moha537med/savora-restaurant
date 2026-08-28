@@ -1,6 +1,6 @@
 import { menuData as popularMenu, homeGallery, customersReviews , specialOffer, orders ,addOrder , updateOrdersCount } from "./data.js";
 
-// =============== Selecting HTML ===================
+//  Selecting HTML 
 const aboutSection = document.querySelector('.about');
 
 const filterMenu = document.querySelectorAll('.popular-menu .filter-menu span');
@@ -23,7 +23,7 @@ const previousReviews = document.getElementById('previousReviews');
 
 let statisticsStarted = false;
 
-// =============== Events Listener ===================
+//  Events Listener 
 window.onscroll = ()=> {
     if (window.scrollY >= aboutSection.offsetTop - 200 && !statisticsStarted) {
         statisticsStarted = true;
@@ -49,7 +49,7 @@ function statisticsAnimation(item , target) {
 
 
 
-// ====================== creat gallery cards , every card contains on (image and overlay) ====================== 
+//  creat gallery cards , every card contains on (image and overlay) 
 homeGallery.forEach((img , i) => {
     const containerDiv = document.createElement("div");
 
@@ -128,7 +128,7 @@ if(window.innerWidth <= 769){
 }
 let lastIndex = reviewsPerPage; 
 
-// ====================== check disable for any button  ====================== 
+//  check disable for any button   
 function checkDisabled(button , isDisabled){
     if(isDisabled){
         button.classList.add("disabled");
@@ -274,7 +274,7 @@ window.addEventListener("resize", () => {
 
 });
 
-// ====================== when click on any menu filter  ====================== 
+//  when click on any menu filter   
 filterMenu.forEach(filter => {
     filter.addEventListener("click" , ()=> {
         filterMenu.forEach(filter => filter.classList.remove("active"))
@@ -285,7 +285,7 @@ filterMenu.forEach(filter => {
 })
 
 
-// ====================== create cards that depand on filter type ====================== 
+//  create cards that depand on filter type  
 function showCards(menu = "All") {
     menuDiv.innerHTML = "";
 
@@ -317,7 +317,7 @@ function createCard(cardObj){
         </div>
         <p>${cardObj.description}</p>
         <p>Price : <strong>$${cardObj.price.toFixed(2)}</strong></p>
-        <button class="secondary addOrder">${cardFound ? "Added ✅" : "Add to Order"}</button>
+        <button class="secondary addOrder ${cardFound && "added"}">${cardFound ? "Added ✅" : "Add to Order"}</button>
     `
 
     card.querySelector(".addOrder").addEventListener("click" , ()=> {

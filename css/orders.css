@@ -1,4 +1,4 @@
-/* ================= ORDER HERO ================= */
+/* Order hero*/
 .shopping {
     display: none;
 }
@@ -123,7 +123,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* gap: 10px; */
 }
 
 .orders .card .info button{
@@ -190,7 +189,7 @@
     align-items: center;
 }
 
-/* ================= TABLET RESPONSIVE ================= */
+/* TABLET RESPONSIVE */
 
 @media (min-width: 769px) and (max-width: 1024px) {
 
@@ -245,7 +244,7 @@
 }
 
 
-/* ================= MOBILE RESPONSIVE ================= */
+/* MOBILE RESPONSIVE */
 
 @media (max-width: 768px) {
 

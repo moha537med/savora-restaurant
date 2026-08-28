@@ -6,15 +6,8 @@ const navMobile = document.querySelector('.header .nav-mobile');
 const navbarLinks = document.querySelectorAll('.pages-links li a');
 
 // varaibles
-
 let isNavMobile = false;
 
-
-
-// make an observer object from IntersectionObserver constructor (observe , IntersectionObserverInit.threshold?)
-// observe ==> callback function that take entries as parameter
-// entries parameter ==> Array of IntersectionObserverEntry objects. , every object contains on isIntersecting(boolean) and target(element that observe) properties
-// IntersectionObserverInit ==> object that contains on threshold , its an Array of Numbers or Number
 
 const sections = document.querySelectorAll("main section");
 

@@ -88,7 +88,6 @@ p.badge {
 .gallery-container .card {
     height: 300px;
     background-color: var(--background);
-    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); */
     position: relative;
     overflow: hidden;
     transition: 0.3s;

@@ -1,7 +1,7 @@
 const form = document.querySelector('.reservation form');
 
 
-// ====================== form validation and its message ====================== 
+//  form validation and its message  
 form.addEventListener("submit", (e)=> {
     e.preventDefault();
     const fullName = form.querySelector("#fullName");
