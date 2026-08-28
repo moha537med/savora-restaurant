@@ -242,7 +242,8 @@ form button:hover {
 
 .faq-answer p {
     padding: 0 20px 20px;
-    color: var(--secondary-text);
+    color: var(--text);
+    font-weight: bold;
 }
 
 /* Active */

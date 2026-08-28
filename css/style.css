@@ -919,7 +919,6 @@ main .cta-section button:hover {
 
 
     /*  HERO  */
-    main .hero,
     main .about {
         width: 80%;
         display: flex;
@@ -951,7 +950,10 @@ main .cta-section button:hover {
         order: 1;
     }
 
-
+    /* Modal */
+    .modal-content{
+        width: 90%;
+    }
 
     /*  SPECIAL OFFER  */
 
@@ -1114,7 +1116,12 @@ main .cta-section button:hover {
         padding-block: 30px;
     }
 
+    /* Modal */
+    .modal-content{
+        width: 90%;
+    }
 
+    
     /*  WHY US  */
 
     .why-us .cards {

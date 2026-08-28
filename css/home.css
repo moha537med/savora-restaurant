@@ -431,13 +431,19 @@ main .reviews {
 
     /*  HERO  */
 
-    main .hero .hero-text p {
-        text-align: center;
+    h2 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 14px;
     }
 
-    main .hero .hero-text .buttons,
-    main .hero .hero-text .badge {
-        align-self: center;
+    .hero{
+        width: 100%;
+    }
+
+    .hero-content {
+        width: 90%;
     }
 
     .about-img {
@@ -507,6 +513,18 @@ main .reviews {
 /* Tablet Responsive*/
 
 @media (min-width: 769px) and (max-width: 1024px)  {
+    /* Hero */
+    .hero{
+        width: 100%;
+    }
+
+    p{
+        font-size: 16px;
+    }
+    .hero-content {
+        width: 65%;
+    }
+    
     /* Gallery */
     .gallery .images{
         display: grid;
@@ -544,3 +562,5 @@ main .reviews {
         gap: 10px;
     }
 }
+
+
