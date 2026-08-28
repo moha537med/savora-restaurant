@@ -45,6 +45,32 @@ main .reservation {
     gap: 10px;
 }
 
+.reservation form .date-time {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.reservation form .date-div,
+.reservation form .time-div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.reservation form .date-div label,
+.reservation form .time-div label {
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.reservation form .date-div input,
+.reservation form .time-div input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
 .reservation form label , .reservation form span {
     gap: 18px;
     color: var(--text);
@@ -88,9 +114,14 @@ form div p.error {
         gap: 40px;
     }
 
-    .reservation form,
-    .reservation .content {
+    .reservation .content,
+    .reservation form {
         width: 100%;
+    }
+
+    .reservation form .date-time {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 
     .reservation .content {
