@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders | Savora Restaurant</title>
+
+    <meta name="description" content="Review and manage your orders at Savora Restaurant.">
+
+    <meta name="robots" content="noindex, follow">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/orders.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo-2.avif" alt="">
+                <!-- <span class="logo-span">SAVORA</span> -->
+                <!-- <span>C Resturant</span> -->
+            </div>
+
+            <nav class="navbar">
+                <ul class="pages-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="user-links">
+                    <a href="orders.html" class="shopping">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="ordersNum"></span>
+                    </a>
+                    <a href="reservation.html" class="secondary bookTable">Book a Table</a>
+                </div>
+            </nav>
+
+            <div class="nav-mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <!-- Order Hero -->
+        <section class="order-hero">
+            <div class="order-hero-content">
+                <p class="badge">🛒 Your Order</p>
+
+                <h1>Your Table, Your Order</h1>
+
+                <p>
+                    Review your selected dishes, adjust the quantities,
+                    and make your order exactly the way you want.
+                </p>
+            </div>
+        </section>
+        
+        <h2 class="orders-heading">Your Order List</h2>
+        <!-- orders section -->
+        <section class="orders">
+        </section>
+
+        <section class="total-section">
+            <div class="actions">
+                <span class="totalPrice"></span>
+                <button class="secondary" id="confirmOrder">Confirm Order</button>
+            </div>
+            <!-- <div class="reservation-table">
+                <span>if you want enjoying with experience come to reservation</span>
+                <a class="primary" href="reservation.html">Book a Table</a>
+            </div> -->
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section order-cta">
+
+            <p class="badge">🍽️ Still Hungry?</p>
+
+            <h2>Make Your Meal Complete</h2>
+
+            <p>
+                Explore our menu and discover more delicious dishes
+                to add to your order.
+            </p>
+
+            <div class="buttons">
+                <a href="menu.html" class="primary">Continue Browsing</a>
+                <a href="reservation.html" class="secondary">Book a Table</a>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Brand -->
+            <div class="footer-column brand">
+                <h2>Savora</h2>
+                <p>
+                    Bold flavors, fresh ingredients, and unforgettable moments.
+                    Your table is always waiting at Savora.
+                </p>
+
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                    <a href="#" aria-label="WhatsApp">WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+
+                <ul class="contact-info">
+                    <li>📍 123 Flavor Street, Downtown</li>
+                    <li>📞 +20 100 123 4567</li>
+                    <li>✉️ hello@savora.com</li>
+                </ul>
+            </div>
+
+            <!-- Opening Hours -->
+            <div class="footer-column">
+                <h3>Opening Hours</h3>
+
+                <div class="opening-hours">
+                    <p>
+                        <strong>Monday - Thursday</strong>
+                        <span>11:00 AM - 11:00 PM</span>
+                    </p>
+
+                    <p>
+                        <strong>Friday - Sunday</strong>
+                        <span>11:00 AM - 12:00 AM</span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="footer-bottom">
+            <p>© 2026 Savora. All rights reserved.</p>
+        </div>
+    </footer>
+    <script type="module" src="js/script.js"></script>
+    <script type="module" src="js/orders.js"></script>
+</body>
+</html>

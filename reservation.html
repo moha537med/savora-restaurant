@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations | Savora Restaurant</title>
+
+    <meta name="description"
+        content="Reserve a table at Savora Restaurant and enjoy fresh food, handcrafted dishes, and a memorable dining experience."
+    >
+
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Reservations | Savora Restaurant">
+    <meta
+        property="og:description"
+        content="Reserve your table at Savora Restaurant for a memorable dining experience."
+    >
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/reservation.css">
+=
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo-2.avif" alt="">
+                <!-- <span class="logo-span">SAVORA</span> -->
+                <!-- <span>C Resturant</span> -->
+            </div>
+
+            <nav class="navbar">
+                <ul class="pages-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+    
+                <div class="user-links">
+                    <a href="orders.html" class="shopping">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="ordersNum">0</span>
+                    </a>
+                </div>
+            </nav>
+
+
+            <div class="nav-mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Reservation Section -->
+        <section class="reservation">
+            <div class="content">
+                <p class="badge">📅 Make a Reservation</p>
+                <h2>Reserve Your Table</h2>
+                <p>Planning a special meal? Reserve your table in advance and let us take care of the rest.</p>
+            </div>
+
+            <form class="book-table">
+
+                <div class="name-div">
+                    
+                    <input type="text" name="" id="fullName" placeholder="Enter your your name">
+                </div>
+
+
+                <div class="email-div">
+                    
+                    <input type="email" name="" id="emailAddress" placeholder="Enter your email">
+                </div>
+
+                <div class="date-div">
+                    <input type="date" name="" id="date" placeholder="Select a date">
+                </div>
+
+                <div  class="time-div">
+                    <input type="time" name="" id="time" placeholder="Select a time">
+                </div>
+
+                <div class="guests-div">
+                    <select name="" id="guests">
+                        <option value="">Number of Guests</option>
+                        <option value="Guest 1">Guest 1</option>
+                        <option value="Guest 2">Guest 2</option>
+                        <option value="Guest 3">Guest 3</option>
+                        <option value="Guest 4">Guest 4</option>
+                        <option value="Guest 5">Guest 5</option>
+                        <option value="Guest 6+">Guest 6+</option>
+                    </select>
+                </div>
+
+                <div class="requests-div">
+                    <textarea  name="" id="spacialRequests" placeholder="Any special requests ?"></textarea>
+                    <span id="spacialRequestsLength">Letters : 0</span>
+                </div>
+
+                <button id="reserveTable">Reserve My Table</button>
+            </form>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Brand -->
+            <div class="footer-column brand">
+                <h2>Savora</h2>
+                <p>
+                    Bold flavors, fresh ingredients, and unforgettable moments.
+                    Your table is always waiting at Savora.
+                </p>
+
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                    <a href="#" aria-label="WhatsApp">WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+
+                <ul class="contact-info">
+                    <li>📍 123 Flavor Street, Downtown</li>
+                    <li>📞 +20 100 123 4567</li>
+                    <li>✉️ hello@savora.com</li>
+                </ul>
+            </div>
+
+            <!-- Opening Hours -->
+            <div class="footer-column">
+                <h3>Opening Hours</h3>
+
+                <div class="opening-hours">
+                    <p>
+                        <strong>Monday - Thursday</strong>
+                        <span>11:00 AM - 11:00 PM</span>
+                    </p>
+
+                    <p>
+                        <strong>Friday - Sunday</strong>
+                        <span>11:00 AM - 12:00 AM</span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="footer-bottom">
+            <p>© 2026 Savora. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="/js/reservation.js"></script>
+    <script type="module" src="/js/script.js"></script>
+</body>
+</html>

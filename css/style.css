@@ -1,0 +1,1225 @@
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* =========================================================
+   ROOT VARIABLES
+========================================================= */
+:root {
+    --primary: #795548;
+    --primary-dark: #563C33;
+
+    --background: #F1ECE6;
+    --background-dark: #292522;
+
+    --border: #D5C9BF;
+    --border-radius: 10px;
+
+    --badge: #563C33;
+    --white: #F8F4EF;
+
+    --text: #292522;
+    --secondary-text: #746A63;
+}
+
+/* =========================================================
+   BODY
+========================================================= */
+
+body {
+    font-family: "Poppins", sans-serif;
+    /* background-color: var(--background); */
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   GENERAL ELEMENTS
+========================================================= */
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+p {
+    line-height: 1.7em;
+}
+
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+p.badge {
+    width: fit-content;
+    background-color: var(--badge);
+    color: var(--white);
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   BUTTONS / LINKS
+========================================================= */
+
+button,
+a {
+    border: none;
+
+    padding: 10px 20px;
+
+    cursor: pointer;
+
+    border-radius: var(--border-radius);
+
+    transition: 0.3s ease;
+
+    text-align: center;
+
+    user-select: none;
+}
+
+
+/* Primary */
+
+button.primary,
+a.primary {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+button.primary:hover,
+a.primary:hover {
+    background-color: var(--primary-dark);
+}
+
+
+/* Secondary */
+
+button.secondary,
+a.secondary {
+    border: 1px solid var(--primary);
+
+    background-color: transparent;
+
+    color: var(--text);
+}
+
+button.secondary:hover,
+a.secondary:hover {
+    background-color: var(--primary-dark);
+    color: var(--white);
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.header {
+    background-color: var(--background);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.header .container {
+    width: 80%;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.header .logo {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    /* gap: 5px; */
+}
+
+.header .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.header .logo span {
+    
+    font-size: 20px;
+    
+    letter-spacing: 2px;
+    
+    color: var(--primary-dark);
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.header .navbar {
+    width: 60%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .navbar .pages-links {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.header .navbar a:not(.bookTable) {
+    padding: 0;
+
+    color: var(--text);
+
+    transition: 0.3s ease;
+}
+
+.header .navbar a:hover {
+    color: var(--primary-dark);
+    letter-spacing: 1px;
+}
+
+.header .navbar a.active {
+    color: var(--primary);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.header .navbar a.active:hover {
+    color: var(--primary-dark);
+}
+
+.header .user-links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.header .user-links a.shopping{
+    position: relative;
+}
+
+.header .user-links a.shopping i {
+    color: var(--primary);
+    font-size: 25px;
+    transition: 0.3s;
+}
+.header .user-links a.shopping i:hover {
+    color: var(--background-dark);
+}
+.header a.shopping #ordersNum {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-80%);
+    color: #a00;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+
+/* =========================================================
+   BOOK TABLE LINK
+========================================================= */
+
+.header a.bookTable {
+    background-color: transparent;
+    color: var(--text);
+}
+
+.header a.bookTable:hover {
+    background-color: var(--primary-dark);
+    color: var(--white);
+}
+
+
+/* =========================================================
+   MOBILE NAV BUTTON
+========================================================= */
+
+.header .nav-mobile {
+    width: 30px;
+    height: 25px;
+
+    display: none;
+
+    flex-direction: column;
+    justify-content: space-between;
+
+    cursor: pointer;
+
+    position: relative;
+    z-index: 100;
+}
+
+.header .nav-mobile span {
+    width: 100%;
+    height: 3px;
+
+    background-color: var(--text);
+
+    border-radius: 5px;
+
+    transition: 0.3s ease;
+}
+
+
+.header .user-links{
+    align-self: center;
+}
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+main {
+    /* background-color: var(--white); */
+
+    display: flex;
+    flex-direction: column;
+    padding-block: 80px;
+
+}
+
+
+/* =========================================================
+   GENERAL SECTIONS
+========================================================= */
+
+main section {
+    width: 80%;
+
+    padding-block: 35px;
+
+    /*
+       Main spacing between sections.
+       Previously: 70px
+    */
+    margin: 70px auto;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   INTERSECTION OBSERVER ANIMATION
+========================================================= */
+
+main section {
+    opacity: 0;
+
+    transform: translateY(30px);
+
+    transition: 0.6s ease;
+}
+
+main section.show {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+main .modal {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    background-color: rgba(0, 0, 0, 0.6);
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .modal-content {
+    background-color: var(--background);
+
+    padding: 30px 20px;
+
+    border-radius: var(--border-radius);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+
+    width: 400px;
+
+    overflow: hidden;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+
+    position: relative;
+}
+
+.modal .modal-content img {
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+}
+
+.modal .modal-content p {
+    text-align: center;
+}
+
+
+/* =========================================================
+   MODAL BOOK TABLE
+========================================================= */
+
+.modal-content a.bookTable {
+    padding: 10px 20px;
+
+    border-radius: var(--border-radius);
+
+    text-align: center;
+
+    align-self: stretch;
+
+    cursor: pointer;
+
+    background-color: var(--primary);
+
+    color: var(--white);
+}
+
+.modal-content a.bookTable:hover {
+    background-color: var(--primary-dark);
+}
+
+
+/* =========================================================
+   MODAL CLOSE BUTTON
+========================================================= */
+
+.modal-content #closeModal {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    background-color: transparent;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    font-size: 28px;
+
+    display: grid;
+    place-content: center;
+}
+
+.modal-content #closeModal:hover {
+    background-color: var(--primary);
+
+    color: var(--white);
+}
+
+.modal-content #closeModal:focus {
+    outline: 3px solid var(--primary);
+
+    outline-offset: 2px;
+}
+
+
+/* =========================================================
+   SPECIAL OFFER
+========================================================= */
+
+.special-offer {
+    width: 80%;
+
+    margin: 30px auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.special-offer .text {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    align-items: flex-start;
+
+    width: 45%;
+}
+
+.special-offer .text .countdown {
+    color: var(--text);
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.special-offer .text #specialOfferMsg {
+    display: none;
+
+    color: var(--primary-dark);
+}
+
+.special-offer .image {
+    width: 40%;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+.special-offer .image img {
+    width: 100%;
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: var(--border-radius);
+}
+
+.special-offer .image span {
+    position: absolute;
+
+    top: 10px;
+    left: 10px;
+
+    background-color: var(--primary);
+
+    color: var(--white);
+
+    padding: 10px 20px;
+
+    border-radius: var(--border-radius);
+
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   WHY US
+========================================================= */
+
+main .why-us {
+    width: 80%;
+
+    margin: 50px auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 30px;
+}
+
+.why-us .text {
+    align-self: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.why-us .text .badge,
+.why-us .text p,
+.why-us .text h2 {
+    align-self: center;
+}
+
+.why-us .cards {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.why-us .cards .card {
+    padding: 20px;
+
+    background-color: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--border-radius);
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    transition: 0.3s ease;
+
+    text-align: center;
+}
+
+.why-us .cards .card:hover {
+    transform: translateY(-3px);
+}
+
+.why-us .cards .card span {
+    align-self: center;
+
+    font-size: 30px;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+main .cta-section {
+    width: 50%;
+
+    margin: 50px auto;
+
+    padding: 70px 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    gap: 20px;
+
+    background-color: var(--background);
+
+    border-radius: var(--border-radius);
+}
+
+.cta-section h2 {
+    color: var(--text);
+
+    font-size: 36px;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+}
+
+.cta-section > p:not(.badge) {
+    max-width: 600px;
+
+    color: var(--text);
+
+    line-height: 1.7;
+}
+
+main .cta-section button {
+    background-color: var(--primary);
+
+    color: var(--white);
+}
+
+main .cta-section button:hover {
+    background-color: var(--primary-dark);
+
+    color: var(--white);
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+    
+    background-color: var(--background-dark);
+
+    color: var(--white);
+
+    margin-top: 50px;
+}
+
+.footer-container {
+    width: 80%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 60px 0 40px;
+
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+
+    gap: 40px;
+}
+
+.footer-column {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.footer-column h2 {
+    color: var(--primary);
+
+    font-size: 30px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+
+    color: var(--white);
+}
+
+.footer-column p {
+    color: #cccccc;
+
+    line-height: 1.7;
+
+    font-size: 14px;
+}
+
+.footer-column ul {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.footer-column ul li {
+    color: #cccccc;
+
+    font-size: 14px;
+}
+
+.footer-column a {
+    color: #cccccc;
+
+    transition: 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: var(--primary);
+}
+
+
+/* =========================================================
+   SOCIAL LINKS
+========================================================= */
+
+.social-links {
+    display: flex;
+
+    /* flex-wrap: wrap; */
+
+    gap: 10px;
+}
+
+.social-links a {
+    padding: 7px 12px;
+
+    border: 1px solid #444;
+
+    border-radius: var(--border-radius);
+
+    font-size: 13px;
+}
+
+.social-links a:hover {
+    background-color: var(--primary);
+
+    border-color: var(--primary);
+
+    color: var(--white);
+}
+
+
+/* =========================================================
+   OPENING HOURS
+========================================================= */
+
+.opening-hours {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.opening-hours p {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.opening-hours strong {
+    color: var(--white);
+}
+
+.opening-hours span {
+    color: #cccccc;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   FOOTER BOTTOM
+========================================================= */
+
+.footer-bottom {
+    border-top: 1px solid #333;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+.footer-bottom p {
+    color: #999;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+
+    /* ================= HEADER ================= */
+
+    .header {
+        /* margin: 20px; */
+        padding: 0 20px;
+    }
+
+    .header .container {
+        width: 90%;
+    }
+
+    .header .logo span {
+    
+        font-size: 16px;
+        
+        letter-spacing: 1px;
+        
+        color: var(--primary-dark);
+    }
+
+    .header .navbar {
+        display: none;
+    }
+
+    .header .navbar.active {
+        max-height: 400px;
+
+        padding: 25px 20px;
+
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+
+        z-index: 99;
+
+        width: 100%;
+
+        background-color: var(--white);
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 20px;
+
+        overflow: hidden;
+    }
+
+
+    /* Links */
+
+    .header .navbar .pages-links {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .header .navbar .pages-links li {
+        width: 100%;
+    }
+
+    .header .navbar .pages-links a {
+        display: block;
+
+        width: 100%;
+
+        padding: 5px 0;
+    }
+
+
+    /* Book Table */
+
+    .header .navbar a.bookTable {
+        background-color: var(--primary);
+
+        color: var(--white);
+
+        padding: 10px 20px;
+    }
+
+
+    /* Hamburger */
+
+    .header .nav-mobile {
+        display: flex;
+    }
+
+    .header .nav-mobile.active span:nth-child(1) {
+        transform: translateY(11px) rotate(45deg);
+    }
+
+    .header .nav-mobile.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .header .nav-mobile.active span:nth-child(3) {
+        transform: translateY(-11px) rotate(-45deg);
+    }
+
+
+    /* ================= MAIN ================= */
+
+    main section {
+        width: 90%;
+
+        /*
+           Smaller spacing on mobile
+        */
+        margin: 35px auto;
+
+        padding-block: 25px;
+    }
+
+
+    /* ================= HERO ================= */
+
+    main .hero,
+    main .about {
+        width: 80%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 30px;
+    }
+
+    main .hero .hero-text,
+    main .hero .hero-img,
+    main .about .about-text,
+    main .about .about-img {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    main .hero .hero-text h1 {
+        font-size: 36px;
+    }
+
+    main .about .about-text h2 {
+        text-align: center;
+
+        font-size: 22px;
+    }
+
+    .about-img {
+        order: 1;
+    }
+
+
+
+    /* ================= SPECIAL OFFER ================= */
+
+    .special-offer {
+        width: 90%;
+
+        flex-direction: column;
+
+        gap: 30px;
+
+        margin: 35px auto;
+    }
+
+    .special-offer .text,
+    .special-offer .image {
+        width: 100%;
+    }
+
+    .special-offer .image img {
+        height: 300px;
+    }
+
+
+    /* ================= WHY US ================= */
+
+    .why-us .cards {
+        grid-template-columns: 1fr;
+    }
+
+
+
+
+    /* ================= CTA ================= */
+
+    main .cta-section {
+        width: 90%;
+
+        padding: 50px 20px;
+
+        margin: 35px auto;
+    }
+
+    .cta-section h2 {
+        font-size: 28px;
+    }
+
+    .cta-section > p:not(.badge) {
+        font-size: 14px;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    .footer {
+        margin-top: 30px;
+    }
+
+    .footer-container {
+        width: 90%;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 40px 25px;
+    }
+
+
+    /* Badge */
+
+    p.badge {
+        font-size: 16px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    p {
+        font-size: 16px;
+    }
+    .header {
+        padding: 18px 0;
+    }
+
+    .header .container {
+        width: 90%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 20px;
+    }
+
+    .header .logo span {
+    
+        font-size: 18px;
+        
+        letter-spacing: 1.8px;
+        
+        color: var(--primary-dark);
+    }
+    /* ================= NAVBAR ================= */
+
+    .header .navbar {
+        width: auto;
+
+        display: flex;
+        align-items: center;
+
+        gap: 20px;
+    }
+
+
+    /* ================= LINKS ================= */
+
+    .header .navbar .pages-links {
+        display: flex;
+        align-items: center;
+
+        gap: 15px;
+    }
+
+    .header .navbar .pages-links a {
+        font-size: 14px;
+
+        white-space: nowrap;
+    }
+
+
+    /* ================= BOOK TABLE ================= */
+
+    .header .navbar a.bookTable {
+        padding: 9px 14px;
+
+        font-size: 13px;
+
+        white-space: nowrap;
+    }
+
+
+    /* ================= MOBILE ICON ================= */
+
+    .header .nav-mobile {
+        display: none;
+    }
+
+
+    /* ================= MAIN ================= */
+
+    main section {
+        width: 85%;
+
+        /*
+           Tablet spacing
+        */
+        margin: 45px auto;
+
+        padding-block: 30px;
+    }
+
+
+    /* ================= WHY US ================= */
+
+    .why-us .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* ================= SPECIAL OFFER ================= */
+
+    .special-offer {
+        gap: 30px;
+
+        margin: 40px auto;
+    }
+
+    .special-offer .text,
+    .special-offer .image {
+        width: 45%;
+    }
+
+
+    /* ================= CTA ================= */
+
+    main .cta-section {
+        width: 70%;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    .footer-container {
+        width: 85%;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 40px 30px;
+    }
+
+    .footer-column.brand {
+        grid-column: span 2;
+    }
+}

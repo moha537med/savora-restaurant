@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Savora Restaurant</title>
+
+    <meta name="description"
+        content="Explore Savora Restaurant's menu featuring handcrafted burgers, grilled dishes, pizza, drinks, and delicious selections made with fresh ingredients."
+    >
+
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Menu | Savora Restaurant">
+    <meta
+        property="og:description"
+        content="Explore burgers, grilled dishes, pizza, drinks, and more at Savora Restaurant."
+    >
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menu.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo-2.avif" alt="">
+                <!-- <span class="logo-span">SAVORA</span> -->
+                <!-- <span>C Resturant</span> -->
+            </div>
+
+            <nav class="navbar">
+                <ul class="pages-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#" class="active">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="user-links">
+                    <a href="orders.html" class="shopping">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="ordersNum"></span>
+                    </a>
+                    <a href="reservation.html" class="secondary bookTable">Book a Table</a>
+                </div>
+            </nav>
+
+            <div class="nav-mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Menu hero section -->
+        <section class="menu-hero">
+            <div class="menu-hero-content">
+                <p class="badge">🍽️ Our Menu</p>
+                <h1>Crafted With Passion</h1>
+                <p>Explore our carefully crafted dishes, made with fresh ingredients and served with flavors you'll love.</p>
+            </div>
+        </section>
+
+        <!-- Menu Filter -->
+        <section class="menu-filter">
+            <h2>Explore Our Menu</h2>
+            <div class="filters"></div>
+        </section>
+        
+        <section class="menu-container"></section>
+        
+        <div class="modal">
+            <div class="modal-content"></div>
+        </div>
+        
+        <!-- Special Offer section -->
+        <section class="special-offer">
+            <div class="text">
+                <p class="badge">🔥 Limited Time Offer</p>
+                <h2>Get 20% Off Your First Order</h2>
+                <p>Treat yourself to your favorite Savora dishes and enjoy an exclusive 20% discount. Don't miss out — this offer won't last forever!</p>
+                <div class="countdown">
+                    <span id="days">00 Days :</span>   
+                    <span id="hours">00 Hours :</span>   
+                    <span id="minutes">00 Minutes :</span>
+                    <span id="seconds">00 Seconds </span>
+                </div>
+                <p id="specialOfferMsg">Sorry The Limited Time Offer  is over😣 but, we make offers every 2 days 😊</p>
+                <button class="secondary addOrder">Order Now</button>
+            </div>
+
+            <div class="image">
+                <span>New</span>
+                <img src="images/chesse burger.webp" alt="chesse burger image" loading="lazy">
+            </div>
+        </section>
+        
+        <!-- CTA section -->
+        <section class="cta-section">
+            <p class="badge">😋 Hungry Yet?</p>
+            <h2>Your Next Favorite Dish Is Waiting</h2>
+            <p>Come hungry, leave happy. Discover your new favorite flavors at Savora.</p>
+            <div class="buttons">
+                <a class="primary" href="contact.html">Contact Us</a>
+                <a href="reservation.html" class="secondary bookTable">Book a Table</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Brand -->
+            <div class="footer-column brand">
+                <h2>Savora</h2>
+                <p>
+                    Bold flavors, fresh ingredients, and unforgettable moments.
+                    Your table is always waiting at Savora.
+                </p>
+
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                    <a href="#" aria-label="WhatsApp">WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+
+                <ul class="contact-info">
+                    <li>📍 123 Flavor Street, Downtown</li>
+                    <li>📞 +20 100 123 4567</li>
+                    <li>✉️ hello@savora.com</li>
+                </ul>
+            </div>
+
+            <!-- Opening Hours -->
+            <div class="footer-column">
+                <h3>Opening Hours</h3>
+
+                <div class="opening-hours">
+                    <p>
+                        <strong>Monday - Thursday</strong>
+                        <span>11:00 AM - 11:00 PM</span>
+                    </p>
+
+                    <p>
+                        <strong>Friday - Sunday</strong>
+                        <span>11:00 AM - 12:00 AM</span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="footer-bottom">
+            <p>© 2026 Savora. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="js/menu.js"></script>
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
+
+
