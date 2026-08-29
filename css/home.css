@@ -181,7 +181,7 @@ main .popular-menu {
 .popular-menu .menu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 30px;
 }
 
 .popular-menu .menu .card {
@@ -202,7 +202,7 @@ main .popular-menu {
 
 .popular-menu .menu .card img {
     width: 100%;
-    height: 300px;
+    height: 250px;
     object-fit: cover;
 }
 
@@ -485,7 +485,9 @@ main .reviews {
         gap: 10px;
     }
 
+    .popular-menu .menu .card img{
 
+    }
 
 
     /*  WHY US  */
@@ -528,6 +530,7 @@ main .reviews {
     p.badge {
         font-size: 16px;
     }
+
 }
 
 
