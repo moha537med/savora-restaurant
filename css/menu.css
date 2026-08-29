@@ -207,6 +207,15 @@ p.badge {
         height: 220px;
     }
 
+    .modal .modal-content {
+        width: 85%;
+        padding: 15px;
+    }
+
+    .modal .modal-content img {
+        height: 250px;
+    }
+
     .special-offer .image img {
         height: 300px;
     }

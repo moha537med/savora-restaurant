@@ -89,13 +89,13 @@ p.badge {
 }
 
 .about-statistics .statistics p {
-    padding: 60px 20px;
+    padding: 30px;
     border: 1px solid var(--border);
     border-radius: var(--border-radius);
     background-color: var(--background);
     color: var(--text);
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     transition: 0.3s;
 }
 
@@ -106,6 +106,7 @@ p.badge {
 
 .about-statistics .statistics span {
     color: var(--primary);
+    font-weight: bold;
 }
 
 
@@ -215,6 +216,10 @@ p.badge {
     .about-statistics .statistics{
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .about-statistics .statistics p{
+        font-size: 14px;
     }
 
     .chefs {

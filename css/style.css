@@ -158,10 +158,10 @@ a.secondary:hover {
 .header .logo span {
     
     font-size: 20px;
-    
-    letter-spacing: 2px;
-    
+    letter-spacing: 2px; 
     color: var(--primary-dark);
+    font-weight: bold;
+
 }
 
 
@@ -198,7 +198,6 @@ a.secondary:hover {
 .header .navbar a.active {
     color: var(--primary);
     font-weight: bold;
-    text-decoration: underline;
 }
 
 .header .navbar a.active:hover {
@@ -812,16 +811,18 @@ main .cta-section button:hover {
     }
 
     .header .container {
-        width: 90%;
+        width: 100%;
     }
+
 
     .header .logo span {
     
-        font-size: 16px;
+        font-size: 14px;
         
         letter-spacing: 1px;
         
         color: var(--primary-dark);
+        
     }
 
     .header .navbar {
@@ -850,7 +851,7 @@ main .cta-section button:hover {
 
         align-items: stretch;
 
-        gap: 20px;
+        gap: 30px;
 
         overflow: hidden;
     }
@@ -878,6 +879,10 @@ main .cta-section button:hover {
         padding: 5px 0;
     }
 
+    .header .user-links {
+        flex-direction: column;
+        gap: 10px;
+    }
 
     /* Book Table */
 
@@ -974,6 +979,10 @@ main .cta-section button:hover {
 
     .special-offer .image img {
         height: 300px;
+    }
+
+    .special-offer .text .countdown {
+        font-size: 14px;
     }
 
 

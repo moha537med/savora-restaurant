@@ -209,7 +209,7 @@ p.badge {
         grid-template-columns: repeat(1,1fr);
     }
 
-        .modal .modal-content {
+    .modal .modal-content {
         width: 85%;
         padding: 15px;
     }

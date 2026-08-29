@@ -115,6 +115,14 @@ document.addEventListener("keydown" , (e)=> {
     }
 })
 
+// when click modal 
+galleryModal.addEventListener("click", (e) => {
+    if (e.target === galleryModal) {
+        hideModal()
+    }
+});
+
+
 
 
 

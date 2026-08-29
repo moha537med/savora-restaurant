@@ -90,6 +90,9 @@ ordersContainer.addEventListener("click" , (e)=> {
         let index = orders.findIndex(order => order.id === cardId);
         orders.splice(index , 1)
         updateOrdersCount();
+        if(orders.length ===0 ){
+            document.querySelector(".orders-heading").style.display='none';
+        }
     }
 
     localStorage.setItem("orders" , JSON.stringify(orders));
@@ -124,23 +127,13 @@ confirmOrderBtn.addEventListener("click", () => {
 
             <h2>Order Confirmed! 🎉</h2>
 
-            <p>
-                Your order has been successfully placed.
-            </p>
+            <p>Your order has been successfully placed.</p>
 
-            <p>
-                Order ID:
-                <strong>${confirmedOrder.id}</strong>
-            </p>
+            <p> Order ID: <strong>${confirmedOrder.id}</strong></p>
 
-            <p>
-                Total:
-                <strong>$${confirmedOrder.total.toFixed(2)}</strong>
-            </p>
+            <p> Total: <strong>$${confirmedOrder.total.toFixed(2)}</strong> </p>
 
-            <a href="menu.html" class="primary">
-                Continue Browsing
-            </a>
+            <a href="menu.html" class="primary"> Continue Browsing </a>
 
         </div>
     `;
