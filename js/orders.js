@@ -5,6 +5,7 @@ const totalSection = document.querySelector(".total-section");
 
 const confirmOrderBtn = document.getElementById("confirmOrder");
 
+
 function showOrders() {
 
     ordersContainer.innerHTML = "";
@@ -26,7 +27,6 @@ function showOrders() {
     document.querySelector(".orders-heading").textContent=`Your Order List(${orders.length})`;
     
     orders.forEach(order => {
-
         ordersContainer.innerHTML += `
             <div class="card" data-id="${order.id}">
 
@@ -34,7 +34,8 @@ function showOrders() {
                 <h3>${order.name}</h3>
 
                 <div class="info">
-                    <p>Price : <strong>$${order.price.toFixed(2)}</strong></p>
+                    <p>Price : ${order.isSpecialOffer ? `<del>$${order.price.toFixed(2)}</del> <strong>$${(order.price * 0.8).toFixed(2)}</strong>` : 
+                    `<strong>$${order.price.toFixed(2)}</strong>`}</p>
 
                     <div class="editPrice">
                         <span class="decrease">-</span>
@@ -45,8 +46,14 @@ function showOrders() {
                     </div>
                 </div>
 
-                <p class="itemTotal"> Total: <strong>$${(order.price * order.quantity).toFixed(2)}</strong></p>
+                <p class="itemTotal"> 
+                    Total: <strong>$${order.isSpecialOffer ?((order.price * 0.8) * order.quantity).toFixed(2) : 
+                        (order.price * order.quantity).toFixed(2)}</strong>
+                </p>
+
                 <button class="secondary removeOrder"> Remove </button>
+
+                ${order.isSpecialOffer ? `<span class="offer-badge badge">🔥 Offer 20%</span>` : ""}
 
             </div>
         `;
@@ -61,7 +68,6 @@ showOrders();
 
 ordersContainer.addEventListener("click" , (e)=> {
 
-    console.log(e.target);
     const card = e.target.closest(".card");
     if(!card){
         return;
@@ -103,7 +109,8 @@ ordersContainer.addEventListener("click" , (e)=> {
 function updateTotalPrice() {
     const totalPrice = totalSection.querySelector(".totalPrice");    
     totalPrice.textContent = `Total Price : $${JSON.parse(localStorage.getItem("orders")).
-    reduce((acc , curr)  => acc + (curr.price * curr.quantity) , 0).toFixed(2)}`;    
+        map(order => order.isSpecialOffer ? (order.price * 0.8) * order.quantity : order.price * order.quantity).
+        reduce((acc, curr) => acc + curr, 0).toFixed(2)}`;    
 }
 
 

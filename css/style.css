@@ -455,6 +455,9 @@ main .modal {
 
     width: 45%;
 }
+.special-offer .text .badge {
+    align-self: flex-start;
+}
 
 .special-offer .text .countdown {
     color: var(--text);

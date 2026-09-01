@@ -20,7 +20,8 @@ export const customersReviews = [{name:"John M" , img:"images/customer 1.webp" ,
 
 export const specialOffer = {
     discount: 20,
-    targetDate: "2026-8-30 23:59:59"
+    targetDate: "2026-9-3 23:59:59",
+    waitTime: 2 * (24 * 60 * 60 * 1000), // 2 days in milliseconds
 };
 
 
@@ -163,7 +164,8 @@ export const menuData = [
         image: "images/chesse burger.webp",
         description: "Juicy grilled beef patty with fresh lettuce, tomato, and our signature sauce.",
         price: 12.99,
-        rating: 4.8
+        rating: 4.8,
+        isSpecialOffer: false
     },
     {
         id: 2,
@@ -172,7 +174,8 @@ export const menuData = [
         image: "images/crispy chicken burger.webp",
         description: "Crispy chicken fillet with fresh lettuce, pickles, and creamy house sauce.",
         price: 11.99,
-        rating: 4.7
+        rating: 4.7,
+        isSpecialOffer: false
     },
     {
         id: 3,
@@ -181,7 +184,8 @@ export const menuData = [
         image: "images/Grilled Chicken Platter.webp",
         description: "A delicious combination of grilled beef, chicken, and savory skewers.",
         price: 15.99,
-        rating: 4.9
+        rating: 4.9,
+        isSpecialOffer: false
     },
 
 
@@ -192,7 +196,8 @@ export const menuData = [
         image: "images/Margherita pizza.webp",
         description: "Classic Italian pizza with tomato sauce, fresh mozzarella, and basil.",
         price: 13.99,
-        rating: 4.8
+        rating: 4.8,
+        isSpecialOffer: false
     },
     {
         id: 5,
@@ -201,7 +206,8 @@ export const menuData = [
         image: "images/BBQ Chicken Pizza.webp",
         description: "Stone-baked pizza topped with spicy chicken, peppers, and melted cheese.",
         price: 16.99,
-        rating: 4.7
+        rating: 4.7,
+        isSpecialOffer: false
     },
     {
         id: 6,
@@ -210,7 +216,8 @@ export const menuData = [
         image: "images/Fresh Lemonade.webp",
         description: "Refreshing homemade lemonade with fresh lemon and mint",
         price: 4.99,
-        rating: 4.7
+        rating: 4.7,
+        isSpecialOffer: false
     },
     // === Burgers ===
     {
@@ -220,7 +227,8 @@ export const menuData = [
         image: "images/Signature Beef Burger.webp",
         description: "Grilled beef patty topped with smoked cheese, crispy onions, and BBQ sauce.",
         price: 14.99,
-        rating: 4.9
+        rating: 4.9,
+        isSpecialOffer: false
     },
 
 
@@ -232,7 +240,8 @@ export const menuData = [
         image: "images/Grilled Steak.webp",
         description: "Tender grilled steak seasoned with herbs and served with roasted vegetables.",
         price: 24.99,
-        rating: 4.9
+        rating: 4.9,
+        isSpecialOffer: false
     },
     {
         id: 9,
@@ -241,7 +250,8 @@ export const menuData = [
         image: "images/Grilled Chicken.webp",
         description: "Juicy chicken breast marinated with fresh herbs and grilled to perfection.",
         price: 17.99,
-        rating: 4.7
+        rating: 4.7,
+        isSpecialOffer: false
     },
     // === Pizza ===
     {
@@ -251,7 +261,8 @@ export const menuData = [
         image: "images/mushroom-pizza.webp",
         description: "Creamy mushroom pizza topped with mozzarella and a touch of truffle oil.",
         price: 17.99,
-        rating: 4.9
+        rating: 4.9,
+        isSpecialOffer: false
     },
 
     // === Pasta ===
@@ -262,7 +273,8 @@ export const menuData = [
         image: "images/italian-pasta.webp",
         description: "Creamy fettuccine pasta tossed with parmesan and our rich Alfredo sauce.",
         price: 15.99,
-        rating: 4.8
+        rating: 4.8,
+        isSpecialOffer: false
     },
     {
         id: 12,
@@ -271,7 +283,8 @@ export const menuData = [
         image: "images/bolognese.webp",
         description: "Traditional pasta served with slow-cooked beef and rich tomato sauce.",
         price: 16.99,
-        rating: 4.8
+        rating: 4.8,
+        isSpecialOffer: false
     },
     {
         id: 13,
@@ -280,7 +293,8 @@ export const menuData = [
         image: "images/pesto-pasta.webp",
         description: "Fresh pasta tossed with creamy basil pesto, parmesan, and cherry tomatoes.",
         price: 15.49,
-        rating: 4.7
+        rating: 4.7,
+        isSpecialOffer: false
     },
 
 
@@ -292,7 +306,8 @@ export const menuData = [
         image: "images/fresh-salad.webp",
         description: "Fresh seasonal vegetables, crisp greens, cherry tomatoes, and house dressing.",
         price: 9.99,
-        rating: 4.6
+        rating: 4.6,
+        isSpecialOffer: false
     },
     {
         id: 15,
@@ -301,7 +316,8 @@ export const menuData = [
         image: "images/chicken-salad.webp",
         description: "Fresh greens topped with grilled chicken, avocado, tomatoes, and lemon dressing.",
         price: 13.99,
-        rating: 4.8
+        rating: 4.8,
+        isSpecialOffer: false
     },
 
 
@@ -313,7 +329,8 @@ export const menuData = [
         image: "images/lava-cake.webp",
         description: "Warm chocolate cake with a rich molten center served with vanilla ice cream.",
         price: 8.99,
-        rating: 4.9
+        rating: 4.9,
+        isSpecialOffer: false
     },
     {
         id: 17,
@@ -322,7 +339,8 @@ export const menuData = [
         image: "images/tiramisu.webp",
         description: "Classic Italian dessert layered with mascarpone, coffee-soaked biscuits, and cocoa.",
         price: 7.99,
-        rating: 4.8
+        rating: 4.8,
+        isSpecialOffer: false
     },
     {
         id: 18,
@@ -331,7 +349,8 @@ export const menuData = [
         image: "images/signature-dessert.webp",
         description: "Smooth creamy cheesecake topped with fresh berries and berry sauce.",
         price: 8.49,
-        rating: 4.7
+        rating: 4.7,
+        isSpecialOffer: false
     },
 
 
@@ -343,7 +362,8 @@ export const menuData = [
         image: "images/orange-juice.webp",
         description: "Freshly squeezed orange juice served chilled for a naturally refreshing taste.",
         price: 5.49,
-        rating: 4.6
+        rating: 4.6,
+        isSpecialOffer: false
     },
     {
         id: 20,
@@ -352,7 +372,8 @@ export const menuData = [
         image: "images/iced-latte.webp",
         description: "Smooth espresso with chilled milk, ice, and a touch of caramel.",
         price: 6.49,
-        rating: 4.8
+        rating: 4.8,
+        isSpecialOffer: false
     }
 
 ];
@@ -361,8 +382,7 @@ export const menuData = [
 
 export let orders = JSON.parse(localStorage.getItem("orders")) || [];
 
-export let confirmedOrders =
-    JSON.parse(localStorage.getItem("confirmedOrders")) || [];
+export let confirmedOrders = JSON.parse(localStorage.getItem("confirmedOrders")) || [];
 
 
 // === Add Order ===
