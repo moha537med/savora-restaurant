@@ -57,6 +57,7 @@ function showOrders() {
 
             </div>
         `;
+        
     });
 
     totalSection.style.display = "flex";
@@ -64,7 +65,7 @@ function showOrders() {
 }
 
 showOrders();
-
+console.log(orders)
 
 ordersContainer.addEventListener("click" , (e)=> {
 
@@ -106,6 +107,7 @@ ordersContainer.addEventListener("click" , (e)=> {
     updateTotalPrice()
 })
 
+// total price for all orders function
 function updateTotalPrice() {
     const totalPrice = totalSection.querySelector(".totalPrice");    
     totalPrice.textContent = `Total Price : $${JSON.parse(localStorage.getItem("orders")).

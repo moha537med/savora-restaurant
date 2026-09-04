@@ -438,7 +438,13 @@ export function confirmOrder() {
         id: `SV-${Date.now()}`,
         items: [...orders],
         total: orders.reduce(
-            (total, order) => total + order.price * order.quantity,
+            (total, order) => {
+                const price = order.isSpecialOffer
+                    ? order.price * 0.8
+                    : order.price;
+
+                return total + price * order.quantity;
+            },
             0
         ),
         status: "confirmed",

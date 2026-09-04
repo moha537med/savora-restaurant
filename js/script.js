@@ -1,4 +1,4 @@
-import { homeGallery, customersReviews ,menuData ,specialOffer , updateOrdersCount ,orders ,addOrder } from "./data.js";
+import { menuData ,specialOffer , updateOrdersCount ,orders ,addOrder } from "./data.js";
 
 // =============== Selecting HTML ===================
 const navbar = document.querySelector('.header .navbar');
@@ -45,6 +45,8 @@ navbarLinks.forEach(link => {
         console.log(isNavMobile)
     })
 })
+
+updateOrdersCount()
 
 
 // countdown for special offer
@@ -120,12 +122,19 @@ if(specialSection){
 
         const specialOfferMsg = document.getElementById("specialOfferMsg");
 
+        let countdown = setInterval(updateCountdown, 1000);
+
         function updateCountdown() {
             const now = new Date();
             const difference = target.getTime() - now.getTime();
 
             if (difference <= 0) {
                 clearInterval(countdown);
+
+                menuData.map(item => item.isSpecialOffer = false);
+                orders.forEach(item => item.isSpecialOffer = false);
+                localStorage.setItem("orders", JSON.stringify(orders));
+
                 if(specialOfferMsg){
                     specialOfferMsg.style.display = "block";
                 }
@@ -141,7 +150,7 @@ if(specialSection){
         // to update the countdown every second
         updateCountdown();
 
-        let countdown = setInterval(updateCountdown, 1000);
+        
 
     }
 
@@ -174,10 +183,15 @@ if(specialSection){
     function startWaiting() {
 
         offerOver = new Date(target.getTime() + specialOffer.waitTime);
-
+        
+        menuData.map(item => item.isSpecialOffer = false);
+        orders.forEach(item => item.isSpecialOffer = false);
+        localStorage.setItem("orders", JSON.stringify(orders));
+        
         let waitingInterval = setInterval(() => {
             const now = new Date();
             const difference = offerOver.getTime() - now.getTime();
+            orders.map(item => item.isSpecialOffer = false);
             if(difference <= 0){
                 clearInterval(waitingInterval);
                 specialOffer.targetDate = new Date().getTime() +  2 * (24 * 60 * 60 * 1000); // Set the new target date to 2 days from now
@@ -186,7 +200,7 @@ if(specialSection){
                 specialOfferItem(item);
                 return;
             }
-            // console.log(`Waiting for next offer... ${Math.ceil(difference / 1000)} seconds remaining`);
+            console.log(`Waiting for next offer... ${Math.ceil(difference / 1000)} seconds remaining`);
         }, 1000);
     }
 
@@ -194,4 +208,3 @@ if(specialSection){
 }
 
 
-updateOrdersCount()

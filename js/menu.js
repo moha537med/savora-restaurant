@@ -48,7 +48,7 @@ function createMenu(type = "all"){
         cardDiv.className="card";
 
         cardDiv.innerHTML = `
-            <img src="${card.image}" alt="${card.name} loading="lazy">
+            <img src="${card.image}" alt="${card.name}" loading="lazy">
             <h3>${card.name}</h3>
             <div class="info">
                 <p>Price : <strong>${card.price}$</strong></p>

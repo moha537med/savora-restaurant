@@ -1,4 +1,4 @@
-import { menuData as popularMenu, homeGallery, customersReviews , specialOffer, orders ,addOrder , updateOrdersCount } from "./data.js";
+import { menuData as popularMenu, homeGallery, customersReviews , orders ,addOrder , updateOrdersCount } from "./data.js";
 
 //  Selecting HTML 
 const aboutSection = document.querySelector('.about');
